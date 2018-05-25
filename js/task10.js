@@ -8,24 +8,7 @@ btn.onclick = function () {
     //input is value of input
     //code
 
-    var firstDigit = +input.split(" ")[0];
-    var lastDigit = +input.split(" ")[2];
-    var op = input.split(" ")[1];
 
-    switch (op) {
-      case '+':
-        return firstDigit + lastDigit;
-        break;
-      case '-':
-        return firstDigit - lastDigit;
-        break;
-      case '*':
-        return firstDigit * lastDigit;
-        break;
-      case '/':
-        return firstDigit / lastDigit;
-        break;
-    }
   }
     document.getElementById("msg10").innerHTML = calculator();
 }

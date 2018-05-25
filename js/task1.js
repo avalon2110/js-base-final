@@ -8,16 +8,6 @@ btn.onclick = function () {
   function checkEmail(){
     //your code here
     //variable value contains input value
-    if(value[0] == '@' || value[value.length-1] == '@'){
-      return false;
-    }
-    var count = 0;
-    for(var i = 0; i < value.length; i++){
-      if(value[i] == '@'){
-        count++;
-      }
-    }
-    return count == 1 ? true : false;
   }
   // console.log(checkEmail());
   if(checkEmail()){

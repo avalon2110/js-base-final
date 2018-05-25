@@ -9,7 +9,6 @@ btn.onclick = function () {
   function checkPhone(){
     //your code here
     //variable value contains input value
-    return +value
 
   }
   if(checkPhone()){

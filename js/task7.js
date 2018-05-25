@@ -44,14 +44,7 @@ btn.onclick = function () {
     //isMarried -> isMarried value
     // phone -> phone
     //code here;
-    usersArray.push({
-      login: login,
-      email: email,
-      pass: pass,
-      isMarried: isMarried,
-      phone: phone
-    });
-    return usersArray;
+
   }
   var newUsersArray = addUser();
   console.log(newUsersArray);

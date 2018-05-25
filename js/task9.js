@@ -50,12 +50,7 @@ function salaryUp(arr){
   //myArray is array of objects
   //addToSalary is a value of input
   //code
-  for(var i = 0; i < arr.length; i++){
-    if(arr[i].dateOfBirth < 1960){
-      arr[i].salary += +addToSalary;
-    }
-  }
-  return arr;
+
 }
 
   var newArr = salaryUp(myArray);

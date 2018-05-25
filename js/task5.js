@@ -37,12 +37,7 @@ btn.onclick = function () {
   ];
 
   function checkPass(){
-    for(var i = 0; i < users.length; i++){
-      if(users[i].login == login && users[i].password == pass){
-        return true;
-      }
-    }
-    return false;
+
     //code here
     //variable value is input value
   }

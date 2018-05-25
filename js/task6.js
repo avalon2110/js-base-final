@@ -10,7 +10,7 @@ btn.onclick = function () {
     //pass1 -> first password
     //pass2 -> second password
     //code here;
-    return pass1 == pass2 ? true : false;
+    
   }
   if(confirmPass()){
     document.getElementById("msg6").innerHTML = succes_msg;

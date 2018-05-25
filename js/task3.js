@@ -9,14 +9,7 @@ btn.onclick = function () {
   function checkPassword(){
     //code here
     //variable value is input value
-    var count = 0;
-    for(var i = 0; i < value.length; i++){
-      if(+value[i]){
-        count++;
-      }
-    }
 
-    return count > 0 && value.length >=8 ? true : false;
   }
   if(checkPassword()){
     document.getElementById("msg3").innerHTML = succes_msg;

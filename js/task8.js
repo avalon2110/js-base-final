@@ -41,11 +41,7 @@ btn.onclick = function () {
     //variables
     //myArray is array of objects
     //code here
-    var sum = 0;
-    myArray.forEach(function (el) {
-      sum += el.salary;
-    })
-    return sum;
+
   }
 
   document.getElementById("msg8").innerHTML = sumSalary();

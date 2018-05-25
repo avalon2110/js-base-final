@@ -33,12 +33,7 @@ btn.onclick = function () {
   ];
 
   function checkLogin(){
-    for(var i = 0; i < users.length; i++){
-      if(users[i].login == value){
-        return false;
-      }
-    }
-    return true;
+
     //code here
     //variable value is input value
 
