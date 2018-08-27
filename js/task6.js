@@ -1,20 +1,198 @@
-var btn = document.getElementById("task6_btn");
-btn.onclick = function () {
-  var pass1 = document.getElementById("task6_inp1").value;
-  var pass2 = document.getElementById("task6_inp2").value;
-  var danger_msg = '<br><strong style="color:red">Passwords not equal!</strong>'
-  var succes_msg = '<br><strong style="color:green">Passwords are equal!</strong>'
+document.getElementById("task6_btn").onclick = function () {
 
+  const tests = [
+    {
+      password1: "qwe",
+      password2: "qwe"
+    },
+    {
+      password1: "qwer",
+      password2: "qwe"
+    },
+    {
+      password1: "qwerty",
+      password2: "qwerty"
+    },
+    {
+      password1: "qweqweqwe",
+      password2: "qweqweqwe"
+    },
+    {
+      password1: 0,
+      password2: false
+    }
+  ];
+  
+  const check = (test, func) => func(test.password1, test.password2) === s6(test.password1, test.password2);
+  
+  tests.forEach((t, i) => {
+    console.log(`test ${i+1} ${check(t,confirmPass) ? 'passed' : 'not passed'}`);
+  });
 
-  function confirmPass(){
-    //pass1 -> first password
-    //pass2 -> second password
-    //code here;
-    
-  }
-  if(confirmPass()){
-    document.getElementById("msg6").innerHTML = succes_msg;
-  } else{
-    document.getElementById("msg6").innerHTML = danger_msg;
-  }
 }
+
+function confirmPass(pass1, pass2){
+  //pass1 -> first password
+  //pass2 -> second password
+  //code here;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function s6(n,r){return n===r}

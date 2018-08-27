@@ -1,5 +1,4 @@
-var btn = document.getElementById("task8_btn");
-btn.onclick = function () {
+document.getElementById("task8_btn").onclick = function () {
 
   var myArray = [
   {
@@ -36,13 +35,176 @@ btn.onclick = function () {
   }
 ];
 
+const check = (func) => sumSalary(myArray) === s8(myArray);
+console.log(`test ${check(sumSalary) ? 'passed' : 'not passed'}`);
 
-  function sumSalary(){
-    //variables
-    //myArray is array of objects
-    //code here
-
-  }
-
-  document.getElementById("msg8").innerHTML = sumSalary();
 }
+
+
+function sumSalary(arr){
+
+  //variables
+  //arr is array of objects
+  //code here
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function s8(n){var o=0;return n.forEach(function(n){o+=n.salary}),o}

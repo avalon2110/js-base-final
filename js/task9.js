@@ -1,9 +1,5 @@
-var btn = document.getElementById("task9_btn");
-btn.onclick = function () {
+document.getElementById("task9_btn").onclick = function () {
 
-  var addToSalary = document.getElementById("task9_inp1").value || "nothing";
-  var danger_msg = '<br><strong style="color:red">Not success!</strong>'
-  var success_msg = '<br><strong style="color:green">Success</strong>'
   var myArray = [
   {
      login:"lol",
@@ -43,16 +39,13 @@ btn.onclick = function () {
   }
 ];
 
-
-
-function salaryUp(arr){
-  //variables
-  //myArray is array of objects
-  //addToSalary is a value of input
-  //code
-
+  console.log(salaryUp(myArray));
 }
 
-  var newArr = salaryUp(myArray);
-  console.log(newArr);
+function salaryUp(arr){
+
+  //arr is array of objects
+  //code
+ 
+  return arr;
 }

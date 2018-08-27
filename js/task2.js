@@ -1,19 +1,139 @@
-var btn = document.getElementById("task2_btn");
-btn.onclick = function () {
-  var input = document.getElementById("task2_inp");
-  var value = input.value;
-  var danger_msg = '<br><strong style="color:red">Danger!</strong>'
-  var succes_msg = '<br><strong style="color:green">Success!</strong>'
+document.getElementById("task2_btn").onclick = function () {
 
+  const tests = [
+    {
+      input: "123123"
+    },
+    {
+      input: "qwe123"
+    },
+    {
+      input: "123qwe"
+    },
+    {
+      input: "qweqwe123qwe"
+    },
+    {
+      input: "asdzxc123123"
+    },
+    {
+      input: "12312312"
+    }
+  ];
+  
+  const check = (test, func) => func(test.input) === s2(test.input);
+  
+  tests.forEach((t, i) => {
+    console.log(`test ${i+1} ${check(t,checkPhone) ? 'passed' : 'not passed'}`);
+  });
 
-  function checkPhone(){
-    //your code here
-    //variable value contains input value
-
-  }
-  if(checkPhone()){
-    document.getElementById("msg2").innerHTML = succes_msg;
-  } else{
-    document.getElementById("msg2").innerHTML = danger_msg;
-  }
 }
+
+function checkPhone(value){
+
+  //your code here
+  //variable value contains input value
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function s2(n){return!!+n}

@@ -1,11 +1,6 @@
-var btn = document.getElementById("task4_btn");
-btn.onclick = function () {
-  var input = document.getElementById("task4_inp");
-  var value = input.value;
-  var danger_msg = '<br><strong style="color:red">Try again!</strong>'
-  var succes_msg = '<br><strong style="color:green">Success!</strong>'
+document.getElementById("task4_btn").onclick = function () {
 
-  var users = [
+  const users = [
     {
       login:"Bob",
       email: "bob@email.com",
@@ -32,15 +27,111 @@ btn.onclick = function () {
     }
   ];
 
-  function checkLogin(){
+  const tests = [
+    {
+      input: "Bob"
+    },
+    {
+      input: "John"
+    },
+    {
+      input: "Mike"
+    },
+    {
+      input: "Vasya"
+    },
+    {
+      input: "Nick"
+    },
+    {
+      input: "Petya"
+    }
+  ];
+  
+  const check = (test, func) => func(test.input, users) === s4(test.input, users);
+  
+  tests.forEach((t, i) => {
+    console.log(`test ${i+1} ${check(t,checkLogin) ? 'passed' : 'not passed'}`);
+  });
 
-    //code here
-    //variable value is input value
-
-  }
-  if(checkLogin()){
-    document.getElementById("msg4").innerHTML = succes_msg;
-  } else{
-    document.getElementById("msg4").innerHTML = danger_msg;
-  }
 }
+
+function checkLogin(name, arr){
+  
+  //code here
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function s4(n,o){return!o.some(function(o){return o.login===n})}

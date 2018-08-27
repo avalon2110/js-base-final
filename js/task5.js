@@ -1,11 +1,6 @@
-var btn = document.getElementById("task5_btn");
-btn.onclick = function () {
-  var login = document.getElementById("task5_inp1").value;
-  var pass = document.getElementById("task5_inp2").value;
-  var danger_msg = '<br><strong style="color:red">Incorrect password!</strong>'
-  var succes_msg = '<br><strong style="color:green">Correct password!</strong>'
+document.getElementById("task5_btn").onclick = function () {
 
-  var users = [
+  const users = [
     {
       login:"Bob",
       email: "bob@email.com",
@@ -36,14 +31,141 @@ btn.onclick = function () {
     }
   ];
 
-  function checkPass(){
+  const tests = [
+    {
+      login: "Bob",
+      password: "qwerty"
+    },
+    {
+      login: "Bob",
+      password: "wrong"
+    },
+    {
+      login: "Vasya",
+      password: "qwertyqwerty"
+    },
+    {
+      login: "Ivan",
+      password: "wrong"
+    },
+    {
+      login: "John",
+      password: "qwerty"
+    }
+  ];
+  
+  const check = (test, func) => func(test.login, test.password, users) === s5(test.login, test.password, users);
+  
+  tests.forEach((t, i) => {
+    console.log(`test ${i+1} ${check(t,checkPass) ? 'passed' : 'not passed'}`);
+  });
 
-    //code here
-    //variable value is input value
-  }
-  if(checkPass()){
-    document.getElementById("msg5").innerHTML = succes_msg;
-  } else{
-    document.getElementById("msg5").innerHTML = danger_msg;
-  }
 }
+
+function checkPass(login, pass, arr){
+
+ 
+  //code here
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function s5(n,o,r){return r.some(function(r){return r.login===n&&r.password===o})}
