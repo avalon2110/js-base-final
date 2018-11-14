@@ -1,3 +1,4 @@
+//test
 document.getElementById("task1_btn").onclick = function () {
 
   const tests = [
@@ -17,9 +18,9 @@ document.getElementById("task1_btn").onclick = function () {
       input: "qwea@@sd"
     }
   ];
-  
+
   const check = (test, func) => func(test.input) === s1(test.input);
-  
+
   tests.forEach((t, i) => {
     console.log(`test ${i+1} ${check(t,checkEmail) ? 'passed' : 'not passed'}`);
   });
@@ -28,7 +29,7 @@ document.getElementById("task1_btn").onclick = function () {
 function checkEmail(value){
   //your code here
   //variable value contains input value
-  
+
 }
 
 
